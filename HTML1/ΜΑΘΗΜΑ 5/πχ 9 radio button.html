@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>radio button</title>
+  </head>
+  <body>
+    <h1>Επιλογη:</h1>
+
+    <form action="sendData" method="post">
+      Επιλεξτε δωρο:
+      <!--SOSARA το name να ειναι
+       ιδιο για ιδιας κατηγοριας επιλογες-->
+      <br>
+      <input type="radio" id="radsweetspoon" name="gift" value="sweetspoon">
+      <label for="radsweetspoon">Γλυκο του κουταλιου</label>
+      <br>
+
+      <input type="radio" id="radmilfei" name="gift" value="milfei" checked>
+      <label for="radmilfei">Μιλφέιγ</label>
+      <br>
+
+      Τροπος Χρεωσης:
+      <br>
+      <input type="radio" id="radVISA" name="payment" value="VISA" checked>
+      <label for="radVISA">VISA</label>
+      <br>
+
+      <input type="radio" id="radcash" name="payment" value="cash">
+      <label for="radcash">Μετρητα</label>
+      <br>
+
+      <input type="radio" id="radcredit" name="payment" value="credit">
+      <label for="radcredit">Πιστωση</label>
+      <br>
+
+      <input type="submit" name="submit" value="Αποστολη">
+      <input type="reset" name="reset" value="Καθαρισμος">
+    </form>
+  </body>
+</html>

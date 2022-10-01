@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Φορμα 2</title>
+  </head>
+  <body>
+    <h2>Οι πιτες μας στον χωρο σας!</h2>
+    <p>Ωραριο ληψης παραγγελειων 18:00-22:00</p>
+
+    <form action="/sendData" method="get">
+      <fieldset>
+        <legend>Πληροφοριες παραδοσης:</legend>
+        <label for="txtname">Ονοματεπωνυμο:</label>
+        <input type="text" id="txtname" name="name" required minlength="3" maxlength="40" size="40">
+        (*)<br>
+
+        <label for="txtaddress">Διευθυνση (Οδος - Αριθμος):</label>
+        <input type="text" id="txtaddress" name="address" minlength="3" maxlength="40" size="40">
+        (*)<br>
+
+        <label for="slplace">Περιοχη:</label>
+        <select id="slplace" name="place">
+          <option value="Neapoli">Νεαπολη</option>
+          <option value="Polichni" selected>Πολιχνη</option>
+          <option value="Toympa">Τουμπα</option>
+          <option value="Kentro">Κεντρο</option>
+        </select>
+        <br>
+
+        <label for="txtemail">E-mail:</label>
+        <input type="email" id="txtemail" name="email" minlength="3" maxlength="40" size="40">
+        <br>
+
+        <label for="txttel">Τηλεφωνο:</label>
+        <input type="tel" id="txttel" name="telephone" required>
+        (*)<br>
+
+        <label for="txtinfo">Ειδικες πληροφοριες για την παραδοση:</label>
+        <textarea id="txtinfo" name="information" rows="8" cols="40"></textarea>
+        <br>
+        (*)Τα πεδια ειναι υποχρεωτικα
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Παραγγελια:</legend>
+
+        <ul>
+          <li>
+            <label for="numspanakopites">Σπανακοπιτες</label>
+            <input type="number" id="numspanakopites" name="spanakopites" value="0">
+          </li>
+          <li>
+            <label for="nummanitaropites">Μανιταροπιτες:</label>
+            <input type="number" id="nummanitaropites" name="manitaropites" value="0">
+          </li>
+          <li>
+            <label for="numprasopites">Πρασοπιτες:</label>
+            <input type="number" name="prasopites" value="0">
+          </li>
+          <li>
+            <label for="nummpourekia">Μπουρεκια:</label>
+            <input type="number" id="nummpourekia" name="mpourekia" value="0">
+          </li>
+        </ul>
+
+        <input type="checkbox" id="chkoffer" name="offer">
+        <label for="chkoffer">Ενσωματωση προσφορας στις 10 η 1 Πιτα ΔΩΡΟ!</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Τροπος Πληρωμης:</legend>
+        <input type="radio" id="radvisa" name="payment" value="visa">
+        <label for="radvisa">VISA</label>
+
+        <input type="radio" id="radcash" name="payment" value="cash" checked>
+        <label for="radcash">Μετρητα</label>
+
+        <input type="radio" id="radcredit" name="payment" value="credit">
+        <label for="radcredit">Πιστωση</label>
+      </fieldset>
+
+      <input type="submit" name="submit" value="Αποστολη">
+      <input type="reset" name="reset" value="Καθαρισμος">
+    </form>
+  </body>
+</html>

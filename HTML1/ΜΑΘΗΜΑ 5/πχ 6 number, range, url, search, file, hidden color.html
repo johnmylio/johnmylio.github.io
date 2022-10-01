@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Παραδειγμα 6</title>
+  </head>
+
+  <body>
+    <h1>Εισαγωγη στοιχειων:</h1>
+    <form action="/sendData" method="POST" enctype="multipart/form-data">
+      <label for="txtnum">1 εως 10 (ακεραιος):</label>
+      <input type="number" id="txtnum" name="number" value="1" min="1" max="10"><br>
+
+      <label for="txtstep2">0 εως 10 (ακεραιος με βημα = 2):</label>
+      <input type="number" id="txtstep2" name="numstep2" value="0" min="0" max="10" step="2"><br>
+
+      <label for="txtstep0.5">0.3 εως 10 (πραγματικος με βημα = 0.5):</label>
+      <input type="number" id="txtstep0.5" name="numstep0.5" value="0.3" min="0.3" max="10" step="0.5"><br>
+
+      <label for="txtnonnegative">Μη Αρνητικος και Πραγματικος Αριθμος:</label>
+      <input type="number" id="txtnonnegative" name="nonnegative" value="0" min="0" step="any"><br>
+
+      <label for="txtrange">Πραγματικος (0 εως 10 με βημα = 0.5):</label>
+      <input type="range" id="txtrange" name="range" value="6" min="0" max="10" step="0.5"><br>
+
+      <label for="txturl">Εισαγετε το url:</label>
+      <input type="url" id="txturl" name="url" placeholder="https://example.com"><br>
+
+      <label for="txtsearch">Αναζητηση:</label>
+      <input type="search" id="txtsearch" name="search"><br>
+
+      <label for="txtfile">Επιλογη Αρχειου:</label>
+      <input type="file" id="txtfile" name="file"><br>
+
+      <label for="txtcolor">Επιλογη Χρωματος:</label>
+      <input type="color" id="txtcolor" name="color"><br>
+
+      <input type="hidden" name="hidden" value="someValue"><br>
+
+      <input type="submit" value="Αποστολη">
+      <input type="reset" value="Καθαρισμος">
+
+    </form>
+  </body>
+</html>

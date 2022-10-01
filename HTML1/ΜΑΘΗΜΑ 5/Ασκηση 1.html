@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Φορμα 1</title>
+  </head>
+  <body>
+    <form action="/sendData" method="get">
+      <label for="txtname">Ονοματεπωνυμο:</label>
+      <input type="text" id="txtname" name="username" minlength="3" maxlength="40" required autocomplete="on">
+      (*)<br>
+
+      <label for="txtemail">E-mail:</label>
+      <input type="email" id="txtemail"name="email" minlength="3" maxlength="40" required autocomplete="on">
+      (*)<br>
+
+      <label for="txttel">Τηλεφωνο:</label>
+      <input type="tel" id="txttel" name="telephone" autocomplete="on">
+      <br>
+
+      <label for="txtmessage">Μηνυμα:</label>
+      <textarea id="txtmessage" name="message" rows="6" cols="40" required autocomplete="on"></textarea>
+      (*)<br>
+      (*) Τα πεδια ειναι υποχρεωτικα
+      <br>
+
+      <input type="submit" name="submit" value="Αποστολη">
+      <input type="reset" name="reset" value="Καθαρισμος">
+    </form>
+  </body>
+</html>

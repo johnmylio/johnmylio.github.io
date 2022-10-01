@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Φορμες</title>
+  </head>
+
+  <body>
+    <h1>Αποστολη δεδομενων</h1>
+    <form action="/sendData" method="GET">
+      <label for="fn">Ονομα:</label>
+      <input id="fn" type="text" name="firstname" placeholder="π.χ. Γιαννης" minlength="3" maxlength="30" required autocomplete="on"><br>
+
+      <label for="ln">Επωνυμο:</label>
+      <input id="ln" type="text" name="lastname" placeholder="π.χ. Μυλιορδος" minlength="3" maxlength="30" required autocomplete="on"><br>
+
+      <label for="comm">Σχολια: </label>
+      <textarea name="comments" id="comm" rows="4" cols="20" placeholder="Τα σχολια σας..." required autocomplete="on"></textarea>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </body>
+</html>

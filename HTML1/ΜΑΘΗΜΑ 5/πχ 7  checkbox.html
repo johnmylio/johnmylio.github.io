@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>checkbox</title>
+  </head>
+  <body>
+    <h1>Επιλογη:</h1>
+
+    <form action="/sendData" method="post">
+      <input type="checkbox" id="chkmaillist" name="nameList" value="mail-on" checked>
+      <label for="chkmaillist">Join Mailing List</label>
+      <br>
+
+      <input type="checkbox" id="chkopt1" name="chkopt1" value="opt1-on">
+      <label for="chkopt1">Option 1</label>
+      <br>
+
+      <input type="checkbox" id="chkopt2" name="chkopt2" checked>
+      <label for="chkopt2">Option 2</label>
+      <br>
+
+      <input type="checkbox" id="chkaccept" name="chkaccept" indeterminate>
+      <label for="chkaccept">Accept Everything</label>
+      <br>
+
+      <input type="submit" name="submit" value="Αποστολη">
+      <input type="reset" name="reset" value="Καθαρισμος">
+    </form>
+  </body>
+</html>

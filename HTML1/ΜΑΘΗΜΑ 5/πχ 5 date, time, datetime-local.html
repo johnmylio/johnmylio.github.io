@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Date, Time, Datetime</title>
+  </head>
+  <body>
+    <form action="/sendData" method="GET">
+      <label for="txtdate">Ημερομηνια:</label>
+      <input type="date" id="txtdate" name="date" min="2018-01-01" value="2022-12-31" required> (*)
+      <br>
+      <label for="txttime">Ωρα:</label>
+      <input type="time" id="txttime" name="time" value="11:59" required> (*)
+      <br>
+      <label for="txtdatetime-local">Ημερομηνια Ωρα:</label>
+      <input type="datetime-local" id="txtdatetime-local" name="datetime" required> (*)
+      <br>
+      (*) Τα πεδια ειναι υποχρεωτικα
+      <br>
+
+      <input type="submit" value="Αποστολη">
+      <input type="reset" value="Καθαρισμος">
+
+
+
+
+
+
+    </form>
+  </body>
+</html>

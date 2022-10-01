@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>dropdown button</title>
+  </head>
+  <body>
+    <form action="/sendData" method="post">
+      <label for="slpayment">Τροπος Χρεωσης:</label>
+      <select id="slpayment" name="payment">
+        <option value="visa">VISA</option>
+        <option value="cash" selected>Μετρητα</option>
+        <option value="credit">Πιστωση</option>
+      </select>
+      <br>
+
+      <input type="submit" name="submit" value="Αποστολη">
+      <input type="reset" name="reset" value="Καθαρισμος">
+    </form>
+  </body>
+</html>
